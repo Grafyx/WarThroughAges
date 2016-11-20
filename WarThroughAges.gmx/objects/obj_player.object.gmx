@@ -105,8 +105,8 @@ if (place_meeting(x,y+vspd,par_solid)) {
     vspd = 0;
 }
 
-x += hspd;
-y += vspd;
+x = median(0,x+hspd,room_width);
+y = median(0,y+vspd,room_height);
 
 move_towards_point(mouse_x,mouse_y,0);
 image_angle = direction;
