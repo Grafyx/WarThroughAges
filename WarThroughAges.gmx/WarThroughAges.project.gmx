@@ -6,49 +6,88 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_levelbutton</sprite>
-    <sprite>sprites\spr_locked</sprite>
-    <sprite>sprites\msk_start</sprite>
-    <sprite>sprites\msk_back</sprite>
-    <sprite>sprites\spr_levelhaze</sprite>
-    <sprite>sprites\msk_options</sprite>
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_carwreck</sprite>
-    <sprite>sprites\spr_bullet</sprite>
     <sprite>sprites\spr_loading</sprite>
+    <sprite>sprites\spr_zombie</sprite>
+    <sprite>sprites\spr_explosion</sprite>
+    <sprites name="Menu">
+      <sprite>sprites\msk_options</sprite>
+      <sprite>sprites\msk_back</sprite>
+      <sprite>sprites\msk_start</sprite>
+      <sprite>sprites\msk_equipment</sprite>
+      <sprite>sprites\spr_locked</sprite>
+      <sprite>sprites\spr_levelbutton</sprite>
+      <sprite>sprites\spr_levelhaze</sprite>
+      <sprite>sprites\spr_switch</sprite>
+      <sprite>sprites\spr_select64x16</sprite>
+      <sprite>sprites\spr_select64x64</sprite>
+      <sprite>sprites\spr_select32x32</sprite>
+      <sprite>sprites\spr_statmeter</sprite>
+    </sprites>
+    <sprites name="Weapons">
+      <sprite>sprites\spr_gun</sprite>
+      <sprite>sprites\spr_machete</sprite>
+      <sprite>sprites\spr_grenade</sprite>
+      <sprite>sprites\spr_bullet</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_menu</background>
     <background>background\bg_ground</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_reload.gml</script>
+    <script>scripts\scr_equipment.gml</script>
+    <script>scripts\scr_equipmentdefaults.gml</script>
+  </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_levels</font>
     <font>fonts\fnt_menu</font>
     <font>fonts\fnt_title</font>
     <font>fonts\fnt_reload</font>
+    <font>fonts\fnt_stats</font>
   </fonts>
   <objects name="objects">
-    <object>objects\obj_levelhaze</object>
-    <object>objects\obj_levelbutton</object>
-    <object>objects\obj_locked</object>
-    <objects name="Text">
+    <objects name="Menu">
       <object>objects\obj_title</object>
       <object>objects\obj_start</object>
       <object>objects\obj_options</object>
       <object>objects\obj_back</object>
+      <object>objects\obj_equipment</object>
+      <object>objects\obj_locked</object>
+      <object>objects\obj_levelbutton</object>
+      <object>objects\obj_levelhaze</object>
+      <object>objects\obj_optionstext</object>
+      <object>objects\obj_switch_autoreload</object>
+      <object>objects\obj_wpnranged_menu</object>
+      <object>objects\obj_wpnthrow_menu</object>
+      <object>objects\obj_wpnmelee_menu</object>
+      <object>objects\obj_select_ranged</object>
+      <object>objects\obj_select_melee</object>
+      <object>objects\obj_select_throw</object>
     </objects>
     <object>objects\obj_player</object>
     <object>objects\obj_carwreck</object>
     <object>objects\par_solid</object>
-    <object>objects\obj_bullet</object>
     <object>objects\obj_reloading</object>
+    <object>objects\obj_zombie</object>
+    <object>objects\obj_zombiespawn</object>
+    <object>objects\obj_explosion</object>
+    <objects name="Weapons">
+      <object>objects\obj_assaultrifle</object>
+      <object>objects\obj_machete</object>
+      <object>objects\obj_grenade</object>
+      <object>objects\obj_bullet</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_splash</room>
     <room>rooms\rm_menu</room>
-    <room>rooms\rm_levelselect</room>
     <room>rooms\rm_options</room>
+    <room>rooms\rm_equipment</room>
+    <room>rooms\rm_levelselect</room>
     <room>rooms\rm_level1</room>
     <room>rooms\rm_level2</room>
   </rooms>
